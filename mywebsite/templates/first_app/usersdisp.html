@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment!</title>
+    <!-- <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/> -->
+  </head>
+  <body>
+    <h1>Hare are your users:</h1>
+
+      {% if users %}
+      <ol>
+        {% for user in users %}
+        <li> User Info</li>
+        <ul>
+          <li> First Name: {{ user.first_name }} </li>
+          <li> Last Name: {{ user.last_name }}</li>
+          <li> Email: {{ user.emailid }}</li>
+        </ul>
+        {% endfor %}
+      {% else %}
+        <p>NO USERS FOUND :( </p>
+      {% endif %}
+    </ol>
+  </body>
+</html>
