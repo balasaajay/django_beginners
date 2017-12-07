@@ -13,7 +13,6 @@ def populate(N):
         fake_lname=fakegen.last_name()
         fake_fname=fakegen.first_name()
         fake_email=fakegen.ascii_free_email()
-        print(fake_fname,fake_lname, fake_email)
         u = User.objects.get_or_create(first_name=fake_fname, last_name=fake_lname, emailid=fake_email)[0]
 
 if __name__=='__main__':
