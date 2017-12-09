@@ -103,3 +103,4 @@ ENV/
 Django-Python-Full-Stack-Web-Devloper-master/*
 mywebsite/first_app/migrations/*
 mywebsite/db.sqlite3*
+basicforms/db.sqlite3*
